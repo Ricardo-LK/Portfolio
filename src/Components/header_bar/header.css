@@ -3,13 +3,29 @@
     padding: 0px;
 }
 
-h1{
+.header {
+    background-image: url('../assets/header1.jpg');
+    background-repeat: no-repeat;
+    background-size: 102%;
+    height: 100svh;
     margin: 0px;
-    padding: 0.7em 0px 0.7em;
-    color: white;
+    text-align: center;
 }
 
-.header {
-    background-color: black;
-    text-align: center;
+h1{
+    margin: 0px;
+    padding: 0.5em 0px 0px;
+    color: white;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 65px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.transition {
+    height: 125px;
+    margin: 0;
+    padding-bottom: 15em;
+    background-image: linear-gradient(to bottom, #1d1c1d, #282628, #4f4b4b);
 }
