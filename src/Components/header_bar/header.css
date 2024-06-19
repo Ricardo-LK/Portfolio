@@ -6,7 +6,7 @@
 .header {
     background-image: url('../assets/header1.jpg');
     background-repeat: no-repeat;
-    background-size: 102%;
+    background-size: 102svw;
     height: 100svh;
     margin: 0px;
     text-align: center;

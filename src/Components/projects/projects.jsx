@@ -1,20 +1,23 @@
 import React from 'react'
 import './projects.css'
 
-import projects_images from '../assets/projects_images'
+import projects_data from '../assets/all_projects'
 
 function Products () {
     return (
         <div className='projects-container'>
             <ul className='projects-list'>
-                {projects_images.map((img, i) => {
+                {projects_data.map((project, i) => {
                 return <li key={i}>
                     <div className='project-container'>
-                        <img src={projects_images[i]} alt="proj" />
+                        <img src={project.image} alt="proj" />
 
-                        <p>Descrição do projeto!</p>
+                        <div className='project-description'>
+                            <h2>{project.name}</h2>
+                            <p>{project.description}</p>
+                        </div>
 
-                        <button><a rel='external' href='https://github.com/Ricardo-LK/FPS---Final-Project-Shooter' >Clique para testar meu projeto!</a></button>
+                        <button><a rel='external' href={project.link} >CLIQUE PARA TESTAR MEU PROJETO!</a></button>
                     </div>
                 </li>})}
 
